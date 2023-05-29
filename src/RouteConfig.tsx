@@ -3,10 +3,10 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import LoginForm from './Login/Login';
 import Dashboard from './Dashboard/Dashboard';
 import Client from './Client/Client';
-import Home from './Pages/Home';
+import Home from './Dashboard/Home';
 import Users from './Users/Users';
-import EmpDetails from './Details/ClientDetails';
-import UserDetails from './Details/UserDetails';
+import ClientDetails from './Client/ClientDetails';
+import UserDetails from './Users/UserDetails';
 import Add from './Add/Add';
 
 function RouteConfig() {
@@ -21,7 +21,7 @@ function RouteConfig() {
                         <Route path="client" element={<Client />} />
                         <Route path="users" element={<Users />} />
                         <Route path="client/add" element={<Add />} />
-                        <Route path="client/details/:id" element={<EmpDetails />} />
+                        <Route path="client/details/:id" element={<ClientDetails />} />
                         <Route path="users/details/:id" element={<UserDetails />} />
                     </Route>
                 </Routes>
