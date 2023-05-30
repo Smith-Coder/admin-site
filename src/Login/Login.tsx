@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Alert1 from './Alert1';
 import { useNavigate } from 'react-router-dom'
+import './login.css'
 
 const LoginForm = () => {
     const [username, setUsername] = useState('');
